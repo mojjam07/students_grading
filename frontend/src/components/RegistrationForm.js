@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/RegistrationForm.css';
+// import LoginForm from '../components/LoginForm';
 
 const RegistrationForm = () => {
   const [formData, setFormData] = useState({
@@ -23,6 +24,12 @@ const RegistrationForm = () => {
     e.preventDefault();
     // Handle form submission logic
     console.log('Form submitted:', formData);
+  };
+
+  const [showLogin, setShowLogin] = useState(false);
+
+  const toggleLoginForm = () => {
+    setShowLogin(showLogin);
   };
 
   return (
@@ -143,7 +150,7 @@ const RegistrationForm = () => {
           </div>
         <button type="submit">Register</button>
         <h6>
-          Already have an account? Login <a href="#">Here</a>
+          Already have an account? Login <a href="#" onClick={toggleLoginForm}>Here</a>
         </h6>
       </form>
     </div>
