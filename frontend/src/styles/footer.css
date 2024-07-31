@@ -1,17 +1,10 @@
-.footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
  .footer {
     background-color: #333;
     color: #fff;
     padding: 10px;
     text-align: center;
-    /* position: fixed; */
-    /* width: calc(100% - 250px);  Adjust this according to sidebar width  */
+    position: fixed;
+    width: 100%;  /*Adjust this according to sidebar width */
     bottom: 0;
     /* left: 250px;  Adjust this according to sidebar width */
     box-sizing: border-box;

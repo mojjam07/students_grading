@@ -1,0 +1,26 @@
+/* Accordion.css */
+.accordion {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  
+  .accordion-title {
+    background-color: #f7f7f7;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  
+  .accordion-title h3 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .accordion-content {
+    padding: 15px;
+    background-color: #fff;
+  }
+  

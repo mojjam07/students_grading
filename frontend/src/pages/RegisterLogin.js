@@ -8,7 +8,7 @@ import Footer from '../components/Footer'
 function RegisterLogin() {
   return (
     <div>
-        <TitleBar />
+        <TitleBar title='Registration Portal' />
         <Register />
         <Footer />
     </div>

@@ -16,7 +16,7 @@ function Dashboard() {
 
   return (
     <div>
-      <TitleBar />
+      <TitleBar title='Dashboard' />
       <div className="content">
         <Sidebar setSelectedOption={setSelectedOption} />
         <div>
