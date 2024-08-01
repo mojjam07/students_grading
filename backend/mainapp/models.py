@@ -16,7 +16,7 @@ class Registration(models.Model):
 
 
 class Student(models.Model):
-    name = models.CharField(max_length=100, null=False)
+    username = models.CharField(max_length=100, null=False)
     email = models.EmailField(max_length=100, null=False)
     course_title = models.CharField(max_length=100, null=False)
     course_code = models.CharField(max_length=100, null=False)
@@ -25,7 +25,7 @@ class Student(models.Model):
 class Instructor(models.Model):
     title = models.CharField(max_length=10, null=False)
     email = models.EmailField(max_length=100, null=False)
-    name = models.CharField(max_length=100, null=False)
+    username = models.CharField(max_length=100, null=False)
     course = models.CharField(max_length=250, null=False)
     score = models.DecimalField(max_digits=10, decimal_places=3, null=False)
     grade = models.CharField(max_length=10, null=False)
