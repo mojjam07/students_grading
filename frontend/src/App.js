@@ -9,6 +9,7 @@ import Home from './Navigation/Home';
 import About from './Navigation/About';
 import Contact from './Navigation/Contact';
 import Privacy from './Navigation/Privacy';
+import ItemList from './components/ItemList';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/privacy' element={<Privacy />} />
+        <Route path='/api' element={<ItemList />} />
       </Routes>
     </BrowserRouter>
   );

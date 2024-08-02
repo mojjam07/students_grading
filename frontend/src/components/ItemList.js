@@ -1,4 +1,3 @@
-// src/components/ItemList.js
 import React, { useState, useEffect } from 'react';
 import { getItems } from '../services/api';
 
@@ -11,7 +10,7 @@ const ItemList = () => {
 
     return (
         <div>
-            <h1>Items</h1>
+            <h1>API call on : Items</h1>
             <ul>
                 {items.map(item => (
                     <li key={item.id}>{item.name}: {item.description}</li>
