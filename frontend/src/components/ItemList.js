@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { getItems } from '../services/api';
+import { getData } from '../services/api';
 
 const ItemList = () => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        getItems().then(data => setItems(data));
+        getData().then(data => setItems(data));
     }, []);
 
     return (
